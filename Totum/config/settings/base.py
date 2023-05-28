@@ -90,10 +90,19 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication'
     ]
 }
+
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Totum API',
     'DESCRIPTION': 'Totum Cloud Platform',
     'VERSION': '1.0.0',
+    "CONTACT": {
+        "name": "Github: Totum",
+        "url": "https://github.com/KBurgTech/Totum"
+    },
+    "LICENSE": {
+        "name": "Licence: MIT",
+        "url": "https://github.com/KBurgTech/Totum/blob/main/LICENSE",
+    },
     'SCHEMA_PATH_PREFIX': "/api/",
     "COMPONENT_SPLIT_PATCH": True,
     "SWAGGER_UI_SETTINGS": {
@@ -101,4 +110,5 @@ SPECTACULAR_SETTINGS = {
         "persistAuthorization": True,
         "displayOperationId": True,
     },
+
 }
