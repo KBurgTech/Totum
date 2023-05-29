@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', os.getenv("TOTUM_MODE", "Totum.config.settings.dev"))
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', os.getenv("TOTUM_SETTINGS_MODULE", "Totum.config.settings.dev"))
 
 application = get_wsgi_application()
